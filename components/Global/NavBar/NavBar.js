@@ -1,11 +1,10 @@
-
+import styles from '../../../styles/NavBar.module.css';
 
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="nav">
-        <div>
+      <div className={styles.nav}>
+        <div className={styles.navComp}>
           <p>pixel-perfect</p>
           <ul>
             <li>Photos</li>
@@ -16,17 +15,15 @@ const NavBar = () => {
             <li>Sound Effects</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.navComp}>
           <ul>
             <li>Explore</li>
             <li>Log in</li>
-          </ul>
-          <ul>
             <li>Join</li>
+            <button>Upload</button>
           </ul>
-          <button>Upload</button>
+         
         </div>
-    </div>
     </div>
   );
 };
